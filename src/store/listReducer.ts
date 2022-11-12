@@ -8,7 +8,7 @@ export type Lists = {
    email: string,
    employment_type: Array<string>,
    id: string,
-   location: object,
+   location: {lat: number, long: number},
    name: string,
    phone: string,
    pictures: Array<string>,

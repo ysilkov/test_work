@@ -1,13 +1,13 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { addList, addSubscribe, getList } from "./store/listReducer";
-import { AppDispatch } from "./store/store";
+import { addList, addSubscribe, getList } from "../store/listReducer";
+import { AppDispatch } from "../store/store";
 import icon from "./../image/icon.png";
 import location from "./../image/location.png";
 import star from "./../image/star.png";
 import iconChange from "./../image/iconChange.png";
-import usePagination from "./hook/usePagination";
-import { RootState } from "./store/store";
+import usePagination from "../hook/usePagination";
+import { RootState } from "../store/store";
 import { Link } from "react-router-dom";
 
 const Main = () => {
@@ -94,7 +94,7 @@ const Main = () => {
                       <img src={location} className="h-4 w-4 mt-0.5 pr-0.5" />
                       <p className="text-slate-400 pb-2 pl-1">{list.address}</p>
                     </div>
-                    <p className=" text-slate-400 w-[16%] mr-2 sm:hidden">
+                    <p className=" text-slate-400 w-[17%] mr-2 sm:hidden">
                       Posted{" "}
                       {new Date(list.createdAt).getDate() === 1
                         ? new Date(list.createdAt).getDate() + " " + "day"
